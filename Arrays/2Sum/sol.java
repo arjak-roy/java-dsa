@@ -1,6 +1,11 @@
 import java.util.*;
 public class sol {
     public static int[] twoSum(int[] nums, int target) {
+        //using a hashmap
+        //O(n)
+        //calculating the complement for each index
+        //putting comlplement and index in hashmap
+        //if a complement is already present in the map, return the index
         Map<Integer, Integer> numMap = new HashMap<>();
         int n = nums.length;
 
